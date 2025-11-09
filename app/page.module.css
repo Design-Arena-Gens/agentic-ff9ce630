@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  position: relative;
+}
+
+.canvas {
+  display: block;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.info {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgba(200, 200, 200, 0.6);
+  font-family: 'Courier New', monospace;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.info h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.info p {
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .info h1 {
+    font-size: 1.2rem;
+  }
+
+  .info p {
+    font-size: 0.8rem;
+  }
+}
